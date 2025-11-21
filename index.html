@@ -10,164 +10,181 @@
 </head>
 <body>
   <header>
-    <nav class="baner">
+    <nav class="jumps">
+      <a class="jump_text" href="#top">Top</a>
+      <a class="jump_text" href="#profile">Profile</a>
+      <a class="jump_text" href="#skills">Skills</a>
+      <a class="jump_text" href="#works">Works</a>
     </nav>
   </header>
-  <div class="main">
-    <img class="icon" src="images/my_icon_traced.png" alt="Yunomi_icon">
-    <div class="name">
-      <h1>Matsuura699 / Yunomi_pixel</h1>
-      <h2>Programming and Pixelart</h2>
-    </div>
-  </div>
-  <h3>Profile</h3>
-  <div class="profile">
-    <h4>github name: Matsuura699<br>
-      handle name: Yunomi_pixel<br>
-      School 　　: <a href="https://www.ct.omu.ac.jp/">大阪公立大学工業高等専門学校</a> 知能情報コース 2年<br>
-      Club 　　　: <a href="https://osaka-sa.netlify.app/" >学友会執行部</a> / <a href="https://www.instagram.com/art_omuct/">総合芸術部</a><br>
-      Others 　　: <a href="https://mikuit.net/" >MikuIT</a> / Klef-Project 所属<br>
-    </h4>
-  </div>
-  <h3>Skills</h3>
-  <div class="skills_button">
-    <button id="programming_skills_button">Programming</button>
-    <button id="others_skills_button">Others</button>
-  </div>
-  <div id="programming_skills">
-    <div class="skills_image">
-      <figure>
-        <img class="skills" src="images/HTML.png" alt="Yunomi_icon">
-        <figcaption>HTML</figcaption>
-      </figure>
-      <figure>
-        <img class="skills" src="images/CSS.png" alt="Yunomi_icon">
-        <figcaption>CSS</figcaption>
-      </figure>
-      <figure>      
-        <img class="skills" src="images/python.png" alt="Yunomi_icon">
-        <figcaption>Python</figcaption>
-      </figure>
-      <figure>
-        <img class="skills" src="images/VSCode.png" alt="Yunomi_icon">
-        <figcaption>VSCode</figcaption>
-      </figure>
-      <figure>
-        <img class="skills" src="images/github.png" alt="Yunomi_icon">
-        <figcaption>github</figcaption>
-      </figure>
-    </div>
-    <div class="skills_image">
-      <figure>
-        <img class="skills" src="images/microbit.jpg" alt="Yunomi_icon">
-        <figcaption>micro:bit</figcaption>
-      </figure>
-      <figure>
-        <img class="skills" src="images/tinkercad.png" alt="Yunomi_icon">
-        <figcaption>tinkercad</figcaption>
-      </figure>
-      <figure>
-        <img class="skills" src="images/arduino.jpg" alt="Yunomi_icon">
-        <figcaption>Arduino</figcaption>
-      </figure>
-      <figure>
-        <img class="skills" src="images/godot.png" alt="Yunomi_icon">
-        <figcaption>GODOT</figcaption>
-      </figure>
+  <section id ="top">
+    <div class="top">
+      <img class="icon" src="images/my_icon_traced.png" alt="Yunomi_icon">
+      <div class="name">
+        <h1>Matsuura699 / Yunomi_pixel</h1>
+        <h2>Programming and Pixelart</h2>
       </div>
-  </div>
-  <div id="others_skills" style="display:none;">
-    <div class="skills_image">
-      <figure>
-        <img class="skills" src="images/edge2.jpg" alt="Yunomi_icon">
-        <figcaption>EDGE2</figcaption>
-      </figure>
-      <figure>
-        <img class="skills" src="images/aseprite.png" alt="Yunomi_icon">
-        <figcaption>Aseprite</figcaption>
-      </figure>
-      <figure>
-        <img class="skills" src="images/AviUtl.png" alt="Yunomi_icon">
-        <figcaption>AviUtl</figcaption>
-      </figure>
     </div>
-  </div>
-  <script>
-    const programming_skills = document.getElementById("programming_skills");
-    const others_skills = document.getElementById("others_skills");
-    document.getElementById("programming_skills_button").addEventListener("click", () => {
-        programming_skills.style.display = "block";
-        others_skills.style.display = "none";
-      });
-    document.getElementById("others_skills_button").addEventListener("click", () => {
-        programming_skills.style.display = "none";
-        others_skills.style.display = "block";
-      });
-  </script>
-  <h3>Works</h3>
-  <div class="skills_button">
-    <button id="programming_works_button">Programming</button>
-    <button id="others_works_button">Others</button>
-  </div>
-  <div id="programming_works">
-    <div class="works_container">
-      <div class="product">
-      <h5>-Python RPG- ～魔術師リファクタの大迷宮～</h5>
-        <div class="product_image">
-          <img class="works" src="images/works_p1_04.png" alt="Yunomi_icon">
+  </section>
+  <section id ="profile">
+    <h3>Profile</h3>
+    <div class="profile">
+      <h4>github name: Matsuura699<br>
+        handle name: Yunomi_pixel<br>
+        School 　　: <a href="https://www.ct.omu.ac.jp/">大阪公立大学工業高等専門学校</a> 知能情報コース 2年<br>
+        Club 　　　: <a href="https://osaka-sa.netlify.app/" >学友会執行部</a> / <a href="https://www.instagram.com/art_omuct/">総合芸術部</a><br>
+        Others 　　: <a href="https://mikuit.net/" >MikuIT</a> / Klef-Project 所属<br>
+      </h4>
+    </div>
+  </section>
+  <section id="skills">
+    <h3>Skills</h3>
+    <div class="skills_button">
+      <button id="programming_skills_button">Programming</button>
+      <button id="others_skills_button">Others</button>
+    </div>
+    <div id="programming_skills">
+      <div class="skills_image">
+        <figure>
+          <img class="skills" src="images/HTML.png" alt="HTML_icon">
+          <figcaption>HTML</figcaption>
+        </figure>
+        <figure>
+          <img class="skills" src="images/CSS.png" alt="CSS_icon">
+          <figcaption>CSS</figcaption>
+        </figure>
+        <figure>      
+          <img class="skills" src="images/python.png" alt="Python_icon">
+          <figcaption>Python</figcaption>
+        </figure>
+        <figure>
+          <img class="skills" src="images/VSCode.png" alt="VSCode_icon">
+          <figcaption>VSCode</figcaption>
+        </figure>
+        <figure>
+          <img class="skills" src="images/github.png" alt="github_icon">
+          <figcaption>github</figcaption>
+        </figure>
+      </div>
+      <div class="skills_image">
+        <figure>
+          <img class="skills" src="images/microbit.jpg" alt="micro:bit_icon">
+          <figcaption>micro:bit</figcaption>
+        </figure>
+        <figure>
+          <img class="skills" src="images/tinkercad.png" alt="tinkercad_icon">
+          <figcaption>tinkercad</figcaption>
+        </figure>
+        <figure>
+          <img class="skills" src="images/arduino.jpg" alt="Aruduino_icon">
+          <figcaption>Arduino</figcaption>
+        </figure>
+        <figure>
+          <img class="skills" src="images/godot.png" alt="GODOT_icon">
+          <figcaption>GODOT</figcaption>
+        </figure>
         </div>
-      <p>Google Colabを用いて、簡易的なダンジョン探索RPGを制作しました。</p>
-      </div>
-      <div class="product">
-        <h5>Cecchino Sniper</h5>
-          <div class="product_image">
-            <video class="works" src="images/work_p2_01.mp4" alt="Yunomi_icon" controls>
-          </div>
-      <p>総合課題実習にて、Web上で遊ぶことができるスナイパーゲームを製作中です。プログラムの一部を担当しています。</p>
+    </div>
+    <div id="others_skills" style="display:none;">
+      <div class="skills_image">
+        <figure>
+          <img class="skills" src="images/edge2.jpg" alt="EDGE2_icon">
+          <figcaption>EDGE2</figcaption>
+        </figure>
+        <figure>
+          <img class="skills" src="images/aseprite.png" alt="Aseprite_icon">
+          <figcaption>Aseprite</figcaption>
+        </figure>
+        <figure>
+          <img class="skills" src="images/AviUtl.png" alt="AviUtl_icon">
+          <figcaption>AviUtl</figcaption>
+        </figure>
       </div>
     </div>
-  </div>
-  <div id="others_works" style="display:none;">
-    <div class="works_container">
-    <div class="product">
-        <h5>総合芸術部 作品展示</h5>
+    <script>
+      const programming_skills = document.getElementById("programming_skills");
+      const others_skills = document.getElementById("others_skills");
+      document.getElementById("programming_skills_button").addEventListener("click", () => {
+          programming_skills.style.display = "block";
+          others_skills.style.display = "none";
+        });
+      document.getElementById("others_skills_button").addEventListener("click", () => {
+          programming_skills.style.display = "none";
+          others_skills.style.display = "block";
+        });
+    </script>
+  </section>
+  <section id ="works">
+    <h3>Works</h3>
+    <div class="skills_button">
+      <button id="programming_works_button">Programming</button>
+      <button id="others_works_button">Others</button>
+    </div>
+    <div id="programming_works">
+      <div class="works_container">
+        <div class="product">
+        <h5>-Python RPG- ～魔術師リファクタの大迷宮～</h5>
           <div class="product_image">
-            <img class="works" src="images/works_o1_01.png" alt="Yunomi_icon">
-            <img class="works" src="images/works_o1_02.png" alt="Yunomi_icon">
+            <img class="works" src="images/works_p1_04.png" alt="works_art">
           </div>
-      <p>総合芸術部にて、2024年度高専祭に向けたドット絵を2枚制作しました。</p>
-      </div>
-      <div class="product">
-        <h5>MikuIT 7月イラスト</h5>
-          <div class="product_image">
-            <img class="works" src="images/works_o2.png" alt="Yunomi_icon">
-          </div>
-        <p>MikuITにおける、7月の季節イラストを制作しました。</p>
+        <p>Google Colabを用いて、簡易的なダンジョン探索RPGを制作しました。<a href="https://colab.research.google.com/drive/14qoXAs28x0-tkgsatNR1_nNpeeyX-2Qf?usp=sharing&classId=246edd3b-092a-476c-8957-e6f0f67944ef&assignmentId=088c058f-36d3-493f-9a62-b2a574b01d46&submissionId=45721c71-d4f3-6adc-2516-22407532d95c">こちらのリンク</a>からプレイ可能です。<br>
+        githubのリポジトリには<a href="https://github.com/Matsuura699/Python_RPG">こちら</a>からアクセス可能です。</p>
+        </div>
+        <div class="product">
+          <h5>Cecchino Sniper</h5>
+            <div class="product_image">
+              <video class="works" src="images/work_p2_01.mp4" alt="works_art" controls>
+            </div>
+        <p>総合課題実習にて、Web上で遊ぶことができるスナイパーゲームを製作中です。プログラムの一部を担当しています。</p>
+        </div>
       </div>
     </div>
-  </div>
-  <script>
-    const programming_works = document.getElementById("programming_works");
-    const others_works = document.getElementById("others_works");
-    document.getElementById("programming_works_button").addEventListener("click", () => {
-        programming_works.style.display = "block";
-        others_works.style.display = "none";
-      });
-    document.getElementById("others_works_button").addEventListener("click", () => {
-        programming_works.style.display = "none";
-        others_works.style.display = "block";
-      });
-  </script>
-  <h3>Contact</h3>
-  <p>各種SNS</p>
-  <div class="SNS_image">
+    <div id="others_works" style="display:none;">
+      <div class="works_container">
+      <div class="product">
+          <h5>総合芸術部 作品展示</h5>
+            <div class="product_image">
+              <img class="works" src="images/works_o1_01.png" alt="works_art">
+              <img class="works" src="images/works_o1_02.png" alt="works_art">
+            </div>
+        <p>総合芸術部にて、2024年度高専祭に向けたドット絵を2枚制作しました。</p>
+        </div>
+        <div class="product">
+          <h5>MikuIT 7月イラスト</h5>
+            <div class="product_image">
+              <img class="works" src="images/works_o2.png" alt="works_art">
+            </div>
+          <p>MikuITにおける、7月の季節イラストを制作しました。</p>
+        </div>
+      </div>
+    </div>
+    <script>
+      const programming_works = document.getElementById("programming_works");
+      const others_works = document.getElementById("others_works");
+      document.getElementById("programming_works_button").addEventListener("click", () => {
+          programming_works.style.display = "block";
+          others_works.style.display = "none";
+        });
+      document.getElementById("others_works_button").addEventListener("click", () => {
+          programming_works.style.display = "none";
+          others_works.style.display = "block";
+        });
+    </script>
+  </section>
+  <footer>
+    <h6>email: ry24121n(a)st.omu.ac.jp<br>※(a)を@に置き換えてください</h6>
+  <div class="SNS_container">
     <a href="https://x.com/Yunomi_pixel" >
       <img class="SNS" src="images/X.png" alt="X_icon">
     </a>
     <a href="https://www.pixiv.net/users/109740251" >
-      <img class="SNS" src="images/pixiv.png" alt="X_icon">
+      <img class="SNS" src="images/pixiv.png" alt="pixiv_icon">
+    </a>
+    <a href="https://github.com/Matsuura699">
+      <img class="SNS" src="images/github_square.png" alt="github_icon">
     </a>
   </div>
-
+  </footer>
+  
 </body>
 </html>
